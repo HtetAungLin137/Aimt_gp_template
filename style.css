@@ -75,7 +75,7 @@ nav {
         justify-content: center;
         text-align: center;
         margin-bottom: 17%;
-         /* backdrop-filter: blur(4px); */
+         backdrop-filter: blur(4px);
 }
 .carousel-caption,a{
     padding: 0 10px;
@@ -83,24 +83,39 @@ nav {
 .bgg{
     background-color: #d9af8b !important;
 }
-.cc{
-    width: 720px;
-}
-
 @media (max-width:800px) {
     .carousel-caption,h3{
         font-size: 16px;
     }
 }
-@media (max-with:777px) {
+@media (max-width:777px) {
+    .carousel-caption>img{
+        width: 500px;
+        height: 800px;
+        object-fit: cover;
+        object-position: center;
+    }
     .carousel-caption,h3{
-        font-size: 16px;
+        font-size: 14px;
     }
     .carousel-caption{
         padding: 25px;
-        margin-bottom: 5%;
+        margin-bottom: 40%;
     }
     .pp{
-        display: none !important;
+        font-size: 12px;
+    }
+    .cc-g{
+        margin-bottom: 60%;
+    }
+}
+@media (max-width:500px) {
+    .cc-g{
+        margin-bottom: 60%;
+    }
+}
+@media  (min-width:1200px) {
+    .cc{
+        width: 700px;
     }
 }
